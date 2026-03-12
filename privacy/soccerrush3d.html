@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Soccer Rush 3D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0c14;
+      --card: #131929;
+      --border: rgba(99,179,237,0.18);
+      --accent: #38bdf8;
+      --accent2: #818cf8;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+
+    html, body { width: 100%; min-height: 100vh; overflow-x: hidden; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito', Arial, sans-serif;
+      line-height: 1.75;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(10,12,20,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    nav a {
+      font-family: 'Russo One', sans-serif;
+      font-size: clamp(15px, 3.5vw, 20px);
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    nav .sep { color: var(--muted); font-size: 16px; }
+
+    nav .current {
+      color: var(--muted);
+      font-size: clamp(11px, 2.5vw, 13px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 16px 64px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(56,189,248,0.1);
+      border: 1px solid rgba(56,189,248,0.3);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: clamp(26px, 6vw, 42px);
+      background: linear-gradient(135deg, #f1f5f9 30%, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+
+    .hero .meta {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: clamp(12px, 2.5vw, 14px);
+    }
+
+    .hero .meta strong { color: var(--text); }
+
+    /* SECTION CARDS */
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+      width: 100%;
+    }
+
+    .section h2 {
+      font-family: 'Russo One', sans-serif;
+      font-size: clamp(14px, 3vw, 16px);
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .num {
+      background: rgba(56,189,248,0.12);
+      border: 1px solid rgba(56,189,248,0.25);
+      color: var(--accent);
+      font-size: 11px;
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #cbd5e1;
+      margin: 16px 0 8px;
+    }
+
+    .section p {
+      color: var(--muted);
+      font-size: clamp(13px, 2.5vw, 15px);
+      margin-bottom: 8px;
+    }
+
+    .section p strong { color: var(--text); }
+
+    .section ul {
+      list-style: none;
+      margin: 6px 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .section ul li {
+      color: var(--muted);
+      font-size: clamp(13px, 2.5vw, 15px);
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .section a { color: var(--accent); text-decoration: none; word-break: break-all; }
+    .section a:hover { text-decoration: underline; }
+
+    /* CONTACT BLOCK */
+    .contact-block {
+      background: rgba(56,189,248,0.06);
+      border: 1px solid rgba(56,189,248,0.2);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-top: 12px;
+    }
+
+    .contact-block p { margin: 0 0 4px; }
+
+    .email-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      font-size: clamp(13px, 2.5vw, 15px);
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    /* PAGE FOOTER */
+    .page-footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .page-footer a { color: var(--accent); text-decoration: none; font-weight: 700; }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      .container { padding: 28px 12px 48px; }
+      .section { padding: 20px 16px; }
+      nav .current { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html">∞ Infinity Play Labs</a>
+  <span class="sep">/</span>
+  <span class="current">Soccer Rush 3D — Privacy Policy</span>
+</nav>
+
+<div class="container">
+
+  <div class="hero">
+    <div class="badge">⚽ Soccer Rush 3D</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last Updated: <strong>February 26, 2026</strong> &nbsp;·&nbsp; This Privacy Policy is provided in English. Translated versions are for convenience only. In case of any conflict, the English version shall prevail.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>This Privacy Policy describes how <strong>Soccer Rush 3D</strong> ("the Game") handles information when you use the mobile application developed and published by <strong>Rohit Kumar Jha</strong>, an individual developer based in India ("Developer", "we", "our", or "us").</p>
+    <p>Your privacy is important to us. This policy explains what information is collected, how it is used, and your rights regarding your data.</p>
+    <p>By using the Game, you agree to the practices described in this Privacy Policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">2</span> Developer Information</h2>
+    <p><strong>Developer Name:</strong> Rohit Kumar Jha</p>
+    <p><strong>Developer Type:</strong> Individual Developer (No registered company)</p>
+    <p><strong>Country:</strong> India</p>
+    <p style="margin-top:12px"><strong>Contact Emails:</strong></p>
+    <div class="contact-block">
+      <div class="email-row">📧 <a href="mailto:rohittjhaa356@gmail.com">rohittjhaa356@gmail.com</a></div>
+      <div class="email-row">📧 <a href="mailto:rohitjha350@gmail.com">rohitjha350@gmail.com</a></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span> Information We Collect</h2>
+    <h3>3.1 Personal Information</h3>
+    <p>The Game does not require:</p>
+    <ul>
+      <li>User accounts or login systems</li>
+      <li>Usernames or profiles</li>
+      <li>Direct personal information submission</li>
+    </ul>
+    <p>We do not intentionally collect personally identifiable information from users.</p>
+    <h3>3.2 Automatically Collected Information</h3>
+    <p>The Game uses third-party services that may automatically collect certain non-personal data. This may include:</p>
+    <ul>
+      <li>Device type and model</li>
+      <li>Operating system version</li>
+      <li>App interaction data</li>
+      <li>Crash reports</li>
+      <li>Approximate location (derived from IP address)</li>
+      <li>Advertising identifiers</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span> Third-Party Services</h2>
+    <h3>Google Firebase</h3>
+    <p>Used for analytics, performance monitoring, and crash reporting. Firebase may collect anonymized usage and diagnostic data.</p>
+    <p>Learn more: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+    <h3>Google AdMob</h3>
+    <p>Used to display advertisements within the Game. AdMob may collect advertising ID, device information, and ad interaction data to deliver relevant advertisements.</p>
+    <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span> Permissions</h2>
+    <p>The Game may use standard device permissions, including:</p>
+    <ul><li>Internet access (for ads and analytics services)</li></ul>
+    <p>The Game does <strong>not</strong> intentionally access:</p>
+    <ul>
+      <li>Camera or microphone</li>
+      <li>Contacts</li>
+      <li>Personal files or photos</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span> Children's Privacy</h2>
+    <p><strong>Soccer Rush 3D</strong> is suitable for a general audience and may be played by children. The Game does not knowingly collect personal information from children.</p>
+    <p>If a parent or guardian believes a child has provided personal information, please contact us and we will promptly address the issue.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span> Offline Gameplay</h2>
+    <p>The core gameplay of <strong>Soccer Rush 3D</strong> works fully offline. Internet connectivity may be used optionally by third-party services such as advertising and analytics.</p>
+    <p>Local multiplayer features operate only on the same device and do not transmit data online.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">8</span> Data Sharing</h2>
+    <p>We do not sell or share personal information with third parties. Data may be processed by Firebase and AdMob solely for:</p>
+    <ul>
+      <li>Analytics and app improvement</li>
+      <li>Advertising services</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">9</span> Data Security</h2>
+    <p>We take reasonable steps to protect user information through trusted Google services. However, no method of electronic storage or transmission is completely secure.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">10</span> User Rights</h2>
+    <p>Depending on your location, you may have rights to:</p>
+    <ul>
+      <li>Request information about collected data</li>
+      <li>Request deletion of data processed through third-party services</li>
+      <li>Opt out of personalized advertising through device settings</li>
+    </ul>
+    <p>You can reset or limit advertising IDs through your device's privacy settings.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">11</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Users are advised to review this policy periodically.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">12</span> Contact Us</h2>
+    <p>If you have any questions or concerns, please contact:</p>
+    <div class="contact-block">
+      <p><strong>Rohit Kumar Jha</strong></p>
+      <div class="email-row">📧 <a href="mailto:rohittjhaa356@gmail.com">rohittjhaa356@gmail.com</a></div>
+      <div class="email-row">📧 <a href="mailto:rohitjha350@gmail.com">rohitjha350@gmail.com</a></div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p>© 2026 <a href="/index.html">Infinity Play Labs</a>. All rights reserved.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

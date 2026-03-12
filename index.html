@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinity Play Labs</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+--bg: #0a0c14;
+--card: #131929;
+--border: rgba(99,179,237,0.18);
+--accent: #38bdf8;
+--accent2: #818cf8;
+--text: #e2e8f0;
+--muted: #94a3b8;
+}
+
+html, body {
+width: 100%;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+body {
+background: var(--bg);
+color: var(--text);
+font-family: 'Nunito', Arial, sans-serif;
+display: flex;
+flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+position: sticky;
+top: 0;
+width: 100%;
+background: rgba(10,12,20,0.97);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid var(--border);
+z-index: 100;
+padding: 14px 20px;
+text-align: center;
+}
+
+.logo {
+font-family: 'Russo One', sans-serif;
+font-size: clamp(18px, 4vw, 24px);
+background: linear-gradient(90deg, var(--accent), var(--accent2));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.tagline {
+font-size: clamp(11px, 2.5vw, 13px);
+color: var(--muted);
+margin-top: 4px;
+letter-spacing: 0.04em;
+}
+
+/* MAIN */
+
+main {
+flex: 1;
+width: 100%;
+padding: 52px 16px 64px;
+text-align: center;
+}
+
+main h1 {
+font-family: 'Russo One', sans-serif;
+font-size: clamp(24px, 6vw, 40px);
+margin-bottom: 40px;
+display: inline-block;
+}
+
+main h1::after {
+content: '';
+display: block;
+height: 3px;
+width: 55%;
+margin: 10px auto 0;
+background: linear-gradient(90deg, var(--accent), var(--accent2));
+border-radius: 99px;
+}
+
+/* GAME CARDS */
+
+.game-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 24px;
+width: 100%;
+max-width: 680px;
+margin: 0 auto;
+}
+
+.game-card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 16px;
+padding: 32px 24px;
+flex: 1 1 240px;
+max-width: 300px;
+box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.game-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 14px 40px rgba(56,189,248,0.15);
+border-color: rgba(56,189,248,0.4);
+}
+
+/* ICON */
+
+.card-icon {
+margin-bottom: 14px;
+}
+
+.card-icon img {
+width: 38px;
+height: 38px;
+object-fit: contain;
+}
+
+/* TEXT */
+
+.game-card h2 {
+font-family: 'Russo One', sans-serif;
+font-size: clamp(16px, 3vw, 19px);
+margin-bottom: 10px;
+color: #f1f5f9;
+}
+
+.game-card p {
+color: var(--muted);
+font-size: 14px;
+margin-bottom: 22px;
+line-height: 1.6;
+}
+
+.game-card a {
+display: inline-block;
+padding: 10px 22px;
+background: linear-gradient(135deg, var(--accent), var(--accent2));
+color: #0a0c14;
+font-weight: 700;
+font-size: 13px;
+text-decoration: none;
+border-radius: 8px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+transition: opacity 0.2s, transform 0.2s;
+}
+
+.game-card a:hover {
+opacity: 0.85;
+transform: scale(1.04);
+}
+
+/* FOOTER */
+
+footer {
+width: 100%;
+background: rgba(10,12,20,0.97);
+border-top: 1px solid var(--border);
+padding: 18px 16px;
+text-align: center;
+font-size: 13px;
+color: var(--muted);
+}
+
+/* MOBILE */
+
+@media (max-width: 520px) {
+
+.game-container {
+flex-direction: column;
+align-items: stretch;
+}
+
+.game-card {
+max-width: 100%;
+flex: none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">∞ Infinity Play Labs</div>
+<p class="tagline">Official Privacy Policy Page for Our Games</p>
+</header>
+
+<main>
+
+<h1>Our Games</h1>
+
+<div class="game-container">
+
+<div class="game-card">
+
+<div class="card-icon">
+<img src="icons/soccer-rush-3d-icon.webp" alt="Soccer Rush 3D">
+</div>
+
+<h2>Soccer Rush 3D</h2>
+
+<p>Endless runner 3D ball hyper casual game.</p>
+
+<a href="privacy/soccerrush3d.html">Privacy Policy</a>
+
+</div>
+
+
+<div class="game-card">
+
+<div class="card-icon">
+<img src="icons/orb-chain-blitz.webp" alt="Orb Chain Blitz">
+</div>
+
+<h2>Orb Chain Blitz</h2>
+
+<p>Fast paced orb strategy challenge. 6 Player offline board game</p>
+
+<a href="https://muggle-dev-rohit.github.io/Orb_Chain_Blitz_website/privacy-policy.html">Privacy Policy</a>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>© 2026 Infinity Play Labs. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
